@@ -1,0 +1,125 @@
+{
+    "players": [
+      {
+        "playerId": 1,
+        "name": "John Smith",
+        "country": "Australia",
+        "image": "https://i.ibb.co.com/k84YYjj/images-1.jpg",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "N/A",
+        "biddingPrice": "$1,200,000"
+      },
+      {
+        "playerId": 2,
+        "name": "Arjun Patel",
+        "country": "India",
+        "image": "https://i.ibb.co.com/3WsGqg0/Arjun.jpg",
+        "role": "All-Rounder",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Right-arm off-spin",
+        "biddingPrice": "$2,500,000"
+      },
+      {
+        "playerId": 3,
+        "name": "James Anderson",
+        "country": "England",
+        "image": "https://i.ibb.co.com/R23D6Wn/anderson.jpg",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm fast",
+        "biddingPrice": "$900,000"
+      },
+      {
+        "playerId": 4,
+        "name": "Mohammad Khan",
+        "country": "Pakistan",
+        "image": "https://i.ibb.co.com/tZGR2F7/Mohammed.jpg",
+        "role": "Bowler",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Left-arm fast",
+        "biddingPrice": "$1,100,000"
+      },
+      {
+        "playerId": 5,
+        "name": "Chris Johnson",
+        "country": "South Africa",
+        "image": "https://i.ibb.co.com/k2w8ksr/crish-jhonson.png",
+        "role": "All-Rounder",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm medium",
+        "biddingPrice": "$1,800,000"
+      },
+      {
+        "playerId": 6,
+        "name": "Liam Wright",
+        "country": "New Zealand",
+        "image": "https://i.ibb.co.com/DbT68dZ/Liam-Wright.jpg",
+        "role": "Batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "N/A",
+        "biddingPrice": "$1,300,000"
+      },
+      {
+        "playerId": 7,
+        "name": "Shane Parker",
+        "country": "West Indies",
+        "image": "https://i.ibb.co.com/SJc531R/Shane-Parker.jpg",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm leg-spin",
+        "biddingPrice": "$750,000"
+      },
+      {
+        "playerId": 8,
+        "name": "Carlos de Silva",
+        "country": "Brazil",
+        "image": "https://i.ibb.co.com/r7VZTVW/Carlos-de-Silva.jpg",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "N/A", 
+        "biddingPrice": "$1,400,000"
+      },
+      {
+        "playerId": 9,
+        "name": "Nikhil Roy",
+        "country": "India",
+        "image": "https://i.ibb.co.com/nC6Bnpc/Nikhil.jpg",
+        "role": "Bowler",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Right-arm medium-fast",
+        "biddingPrice": "$950,000"
+      },
+      {
+        "playerId": 10,
+        "name": "David Warner",
+        "country": "Australia",
+        "image": "https://i.ibb.co.com/0rbrDqH/Devid.jpg",
+        "role": "Batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "N/A",
+        "biddingPrice": "$2,100,000"
+      },
+      {
+        "playerId": 11,
+        "name": "Fernando Lopez",
+        "country": "Argentina",
+        "image": "https://i.ibb.co.com/6NP06bz/Frenado-11.png",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Left-arm orthodox spin",
+        "biddingPrice": "$600,000"
+      },
+      {
+        "playerId": 12,
+        "name": "Ahmed Ali",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/mBn2Rgt/Ahmed-Ali-12.jpg",
+        "role": "All-Rounder",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Right-arm medium",
+        "biddingPrice": "$1,700,000"
+      }
+    ]
+  }
+  
