@@ -2,8 +2,8 @@
 const Footer = () => {
     return (
        
-        <div className="bg-[#131313] absolute w-full flex flex-col 
-        items-center justify-center pt-10">
+        <div className="bg-[#131313] bottom-4 relative w-full flex flex-col 
+        items-center justify-center  pt-8">
         {/* Centered Image */}
         <div className="w-14 rounded-full flex justify-center mb-6">
             <img

@@ -1,4 +1,4 @@
-
+// header section
 const Header = ({ coinCount }) => {
     return (
         <div className="sticky top-0 z-50 bg-gray-200">
