@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 
 import { useEffect, useState } from "react";
 
@@ -9,7 +9,7 @@ const PlayerCards = ({ coinCount, setCoinCount, selectedPlayers, setSelectedPlay
     useEffect(() => {
         fetch('./players.json')
             .then((res) => res.json())
-            .then((data) => setPlayers(data.players)) // Ensure to access the players array
+            .then((data) => setPlayers(data.players))
             .catch((error) => console.error("Error fetching players:", error));
     }, []);
 
@@ -21,9 +21,10 @@ const PlayerCards = ({ coinCount, setCoinCount, selectedPlayers, setSelectedPlay
         }
 
         if (!selectedPlayers.some((p) => p.playerId === player.playerId)) {
+            // Deduct the coins and add the player to the selected list
             setCoinCount((prev) => prev - player.biddingPrice);
             setSelectedPlayers((prev) => [...prev, player]);
-            setErrorMessage(""); 
+            setErrorMessage("");
         } else {
             alert("Player already selected.");
         }
@@ -61,13 +62,15 @@ const PlayerCards = ({ coinCount, setCoinCount, selectedPlayers, setSelectedPlay
                         <p className="text-sm md:text-base lg:text-sm font-bold flex justify-between">
                             Price: {player.biddingPrice}
                             <button
-                                className="btn btn-xs sm:btn-sm items-center w-[145px] h-[52px] p-4 border md:btn-md lg:btn-lg bg-gray-100 font-semibold rounded flex"
+                                className={`btn btn-xs sm:btn-sm items-center w-[145px] h-[52px] p-4 border md:btn-md lg:btn-lg font-semibold rounded ${selectedPlayers.some((p) => p.playerId === player.playerId) ? "bg-gray-300 cursor-not-allowed" : "bg-gray-100 cursor-pointer"}`}
                                 onClick={() => handleSelectPlayer(player)}
+                                disabled={selectedPlayers.some((p) => 
+                                    p.playerId === player.playerId)}
                             >
-                                Choose Player
+                                {selectedPlayers.some((p) => p.playerId === player.playerId) ? "Selected" : "Choose Player"}
                             </button>
                         </p>
-                    </div>
+                    </div> 
                 </div>
             ))}
         </div>

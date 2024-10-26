@@ -1,9 +1,10 @@
 
 const Banner = ({  handleClaimFreeCredit }) => {
+
     return (
         <div className=" bg-no-repeat bg-cover rounded-3xl w-full  sm:w-4/5 md:w-3/5 
         lg:w-[75%]  sm:h-60 md:h-[45rem] mb-10 mx-auto bg-[#000000] 
-        h-screen m-4 p-4 bg-gradient-to-r from-blue-700 via-gray-900 to-yellow-900">
+        h-screen m-4 p-4 bg-gradient-to-r from-blue-950 via-gray-950 to-yellow-950">
             
            
          <div className="w-9/12 mx-auto flex flex-col justify-center items-center

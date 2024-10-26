@@ -20,8 +20,8 @@ const App = () => {
 
        const handleClaimFreeCredit = () => {
    setCoinCount(prevCount => prevCount + 5000000);
+   alert("Congratulations! You've received your credit!");
    };
-
 
   const handleSelectPlayer = (player) => {
     if (coinCount < player.biddingPrice) {
@@ -101,6 +101,7 @@ const handleRemovePlayer = (id) => {
         onSelectPlayer={handleSelectPlayer} 
          />
       )}
+
 
    <HandleSelectPlayer></HandleSelectPlayer> 
    
