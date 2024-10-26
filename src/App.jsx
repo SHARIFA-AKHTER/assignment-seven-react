@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import Banner from "./components/Banner/Banner";
 import Header from "./components/Header/Header";
@@ -8,6 +9,8 @@ import Players from "./components/Players/Players";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Footer from "./components/Footer/Footer";
 import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers';
+import HandleSelectPlayer from "./components/Players/handleSelectPlayer/handleSelectPlayer";
+
 
 const App = () => {
   const [coinCount, setCoinCount] = useState(0);
@@ -16,7 +19,7 @@ const App = () => {
 
 
        const handleClaimFreeCredit = () => {
-   setCoinCount(prevCount => prevCount + 10);
+   setCoinCount(prevCount => prevCount + 5000000);
    };
 
 
@@ -87,6 +90,7 @@ const handleRemovePlayer = (id) => {
         <AvailablePlayers 
         coinCount={coinCount}
           setCoinCount={setCoinCount}
+          selectedPlayers={selectedPlayers}
           setSelectedPlayers={setSelectedPlayers}
       
         />
@@ -98,7 +102,7 @@ const handleRemovePlayer = (id) => {
          />
       )}
 
-    
+   <HandleSelectPlayer></HandleSelectPlayer> 
    
     {/* players */}
 

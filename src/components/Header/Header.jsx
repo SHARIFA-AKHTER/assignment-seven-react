@@ -1,7 +1,7 @@
 
 const Header = ({ coinCount }) => {
     return (
-        <div className="sticky top-0 z=50 bg-white">
+        <div className="sticky top-0 z-50 bg-gray-200">
              <div className="flex flex-col md:flex-row md:justify-between  items-center
         py-8 space-y-4 md:space-y-0 ">
             {/* logo */}
@@ -24,9 +24,9 @@ const Header = ({ coinCount }) => {
                 <li><a href=""></a>Schedules</li>
             </ul>
 
-            <button className="btn  space-x-2 
+            <button className="btn   space-x-2
               text-[#131313] font-semibold rounded flex bg-[#FFFFFF]
-              items-center w-[125px] h-[52px] p-4 border ">
+              items-center w-[180px] h-[50px] ml-12 border  ">
                  
                 <span>{coinCount} Coin</span>  
                 <img src="https://i.ibb.co.com/Vmsg3Bh/dollar-1.png" alt="coin image"

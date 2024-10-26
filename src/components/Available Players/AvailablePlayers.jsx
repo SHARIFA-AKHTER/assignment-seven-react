@@ -1,8 +1,5 @@
 
- const AvailablePlayers = ({ onSelectPlayer,selectedPlayers , onRemovePlayer }) =>{
-  
-
- 
+ const AvailablePlayers = () =>{
      return (
 
         <>
