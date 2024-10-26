@@ -3,8 +3,12 @@ const Subscribe = () => {
     return (
 
         <div
-        className="bg-cover bg-no-repeat rounded-3xl flex flex-col items-center justify-center mx-auto
-                   w-full h-auto md:h-[35.5rem] lg:w-[1340px] lg:h-[284px] p-6 lg:p-10 space-y-4 text-center mb-10"
+        className=" bg-cover bg-no-repeat rounded-3xl flex flex-col
+         items-center justify-center mx-auto 
+          w-11/12 lg:w-[1340px] h-auto md:h-[35.5rem] lg:h-[336px] 
+          p-8 lg:p-12 space-y-6 text-center shadow-lg
+          transition transform hover:scale-105 
+          hover:translate-y-1 duration-300 ease-in-out mb-16"
         style={{
             backgroundImage: 'url(https://i.ibb.co/tDfKFtb/bg-shadow.png)',
         }}

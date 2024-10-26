@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+/* eslint-disable react/prop-types */
+/* eslint-disable no-undef */
 
-const PlayerCards = () => {
+import { useEffect, useState } from "react";
+const PlayerCards = ({ coinCount, setCoinCount, selectedPlayers, setSelectedPlayers }) => {
     const [players, setPlayers] = useState([]);
 
     useEffect(() => {
@@ -10,6 +12,22 @@ const PlayerCards = () => {
             .catch((error) => console.error("Error fetching players:", error));
     }, []);
 
+    const handleSelectPlayer = (player) => {
+        if (coinCount < player.biddingPrice) {
+            setErrorMessage(`Not enough coins to select ${player.name}.`);
+            return;
+        }
+
+        if (!selectedPlayers.some((p) => p.playerId === player.playerId)) {
+            setCoinCount((prev) => prev - player.biddingPrice);
+            setSelectedPlayers((prev) => [...prev, player]);
+        } 
+        else {
+            alert("Player already selected.");
+        }
+    };
+
+    
     return (
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 ">
             {players.map((player) => (
@@ -38,15 +56,34 @@ const PlayerCards = () => {
                         >All-Rounder</button>
                         </div>
                         <hr />
-                        <div className="badge badge-secondary">Rating</div>
                         <p className="text-sm md:text-base lg:text-sm">
-                            {`Batting Type: ${player.battingType}`}</p>
+                            {`Batting Type: ${player.battingType}`}
+                        </p>
                         <p className="text-sm md:text-base lg:text-sm">
-                            {` Price: ${player.biddingPrice}`}</p>
+                            {`Bowling Type: ${player.bowlingType}`}
+                        </p>
+                        <p className="text-sm md:text-base lg:text-sm font-bold flex justify-between">
+                            {`Price: ${player.biddingPrice}`}
+                            <button
+                            className="btn btn-xs sm:btn-sm  
+                        items-center w-[145px] h-[52px] p-4 border
+                        md:btn-md lg:btn-lg bg-gray-100 font-semibold rounded flex "
+                            onClick={() => handleSelectPlayer(player)}
+                            
+                        >
+                            
+                            Choose Player
+                        </button>
+                        
+                        </p>
+                        
                     </div>
                 </div>
             ))}
+            
         </div>
+
+        
     );
 };
 
